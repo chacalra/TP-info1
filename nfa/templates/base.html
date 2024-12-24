@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de NFA</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+    <h1>Definición del NFA</h1>
+    <pre>{nfa_text}</pre>
+
+    <h1>Gráfico Generado con Mermaid</h1>
+    <div class="mermaid">
+        {mermaid_code}
+    </div>
+
+    <h1>Gráfico Generado con Graphviz</h1>
+    <div>
+        <img src="{graphviz_image_path}" alt="Diagrama generado con Graphviz">
+    </div>
+</body>
+</html>
